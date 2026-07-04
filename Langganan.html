@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="author" content="CV Lintas Multi Tama">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <title>CV Lintas Multi Tama - Langganan</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-liberty-market.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <style>
+    /* Body and General Page Background Override */
+    body {
+      background-color: #12072b !important;
+    }
+    
+    /* Styling for Pricing Cards Section */
+    .pricing-section {
+      padding: 100px 0 60px 0;
+      position: relative;
+      background-color: #12072b;
+    }
+    
+    .pricing-title h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    
+    .pricing-title p {
+      font-size: 16px;
+      color: #afadb5;
+      max-width: 600px;
+      margin: 0 auto 50px auto;
+      line-height: 1.6;
+    }
+    
+    .pricing-card {
+      background-color: #1a0b3a;
+      border: 1px solid #3c1e75;
+      border-radius: 20px;
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      margin-bottom: 30px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    
+    .pricing-card.popular {
+      background-color: #240e4f;
+      border: 2px solid #7453fc;
+      box-shadow: 0 15px 35px rgba(116, 83, 252, 0.2);
+    }
+    
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      border-color: #7453fc;
+    }
+    
+    .pricing-card.popular:hover {
+      box-shadow: 0 20px 45px rgba(116, 83, 252, 0.35);
+    }
+    
+    .popular-tag {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #7453fc;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+    }
+    
+    .pricing-card .package-name h3 {
+      font-size: 20px;
+      font-weight: 500;
+      color: #a78bfa;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .pricing-card .speed {
+      font-size: 42px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    
+    .pricing-card .speed span {
+      font-size: 18px;
+      font-weight: 400;
+      color: #afadb5;
+    }
+    
+    .pricing-card .price {
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+      margin: 15px 0 25px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 25px;
+    }
+    
+    .pricing-card .price span {
+      font-size: 14px;
+      font-weight: 400;
+      color: #afadb5;
+      display: block;
+      margin-top: 5px;
+    }
+    
+    .pricing-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 35px 0;
+      text-align: left;
+    }
+    
+    .pricing-features li {
+      font-size: 15px;
+      color: #dfd7f7;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+    
+    .pricing-features li i {
+      color: #06d6a0;
+      font-size: 16px;
+      margin-top: 3px;
+    }
+    
+    .pricing-card .order-btn {
+      display: block;
+      width: 100%;
+      background-color: #7453fc;
+      border: 1px solid #7453fc;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 25px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .pricing-card .order-btn:hover {
+      background-color: #ffffff;
+      color: #7453fc;
+      border-color: #ffffff;
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Promo Banner STB Android */
+    .stb-promo-banner {
+      background: linear-gradient(135deg, #170d2b 0%, #24143a 100%);
+      border: 1px solid #7453fc;
+      border-radius: 20px;
+      padding: 35px;
+      margin-top: 40px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(116, 83, 252, 0.1);
+    }
+    
+    .stb-promo-banner::before {
+      content: 'PROMO';
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 90px;
+      font-weight: 900;
+      color: rgba(116, 83, 252, 0.04);
+      pointer-events: none;
+      letter-spacing: 2px;
+    }
+    
+    .stb-badge {
+      background-color: #06d6a0;
+      color: #170d2b;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    
+    .stb-promo-banner h3 {
+      color: #fff;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    
+    .stb-promo-banner h3 span {
+      color: #00f2fe;
+    }
+    
+    .stb-promo-banner p {
+      color: #dfd7f7;
+      font-size: 15px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-bottom: 0;
+    }
+    
+    /* Terms and Area Section */
+    .info-section {
+      padding: 30px 0 100px 0;
+      background-color: #12072b;
+    }
+    
+    .info-box {
+      background-color: #1a0b3a;
+      border: 1px solid #3c1e75;
+      border-radius: 20px;
+      padding: 35px;
+      height: 100%;
+    }
+    
+    .info-box h4 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #7453fc;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    
+    .info-box ul {
+      padding-left: 20px;
+      color: #dfd7f7;
+    }
+    
+    .info-box ul li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    
+    /* Area tag cloud */
+    .area-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .area-tag {
+      background-color: rgba(116, 83, 252, 0.1);
+      border: 1px solid rgba(116, 83, 252, 0.3);
+      color: #dfd7f7;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .area-tag:hover {
+      background-color: #7453fc;
+      color: #fff;
+      border-color: #7453fc;
+      transform: translateY(-2px);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="">
+            </a>
+
+            <ul class="nav">
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="Tentang_kami.html">Tentang Kami</a></li>
+              <li><a href="Langganan.html" class="active">Langganan</a></li>
+              <li><a href="Kontak.html">Kontak</a></li>
+            </ul>
+
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Pricing Cards Section -->
+  <div class="pricing-section">
+    <div class="container">
+      
+      <!-- Judul & Subjudul -->
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="pricing-title">
+            <h2>Pilihan Paket Internet LMT</h2>
+            <p style="color: #7453fc; font-weight: 600; font-size: 18px; margin-bottom: 5px;">PROMO WIFI STABIL • MURAH • CEPAT</p>
+            <p>WiFi Resmi • Bukan Paralel • Gratis Perbaikan Seumur Hidup</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Paket Utama -->
+      <div class="row">
+        
+        <!-- Paket 10 Mbps -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="pricing-card">
+            <div class="package-name">
+              <h3>Paket 10 Mbps</h3>
+            </div>
+            <div class="speed">
+              10<span>Mbps</span>
+            </div>
+            <div class="price">
+              Rp 150.000<span>/ Bulan (Tarif Flat)</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fa fa-check-circle"></i> Cocok untuk s/d 3 HP / Perangkat</li>
+              <li><i class="fa fa-check-circle"></i> Pemasangan & registrasi gratis (cukup bayar bulanan awal)</li>
+              <li><i class="fa fa-check-circle"></i> Paket Unlimited</li>
+              <li><i class="fa fa-check-circle"></i> Boost kecepatan s/d 15 Mbps</li>
+            </ul>
+            <a href="https://wa.me/6285179816173?text=Halo%20LMT%20Internet,%20saya%20tertarik%20untuk%20pasang%20Paket%2010%20Mbps%20Lite" target="_blank" class="order-btn">Pemasangan Gratis</a>
+          </div>
+        </div>
+
+        <!-- Paket 15 Mbps (Popular) -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="pricing-card popular">
+            <div class="popular-tag">Paling Populer</div>
+            <div class="package-name">
+              <h3>Paket 15 Mbps</h3>
+            </div>
+            <div class="speed">
+              15<span>Mbps</span>
+            </div>
+            <div class="price">
+              Rp 170.000<span>/ Bulan (Tarif Flat)</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fa fa-check-circle"></i> Cocok untuk s/d 5 HP / Perangkat</li>
+              <li><i class="fa fa-check-circle"></i> Pemasangan & registrasi gratis (cukup bayar bulanan awal)</li>
+              <li><i class="fa fa-check-circle"></i> Paket Unlimited</li>
+              <li><i class="fa fa-check-circle"></i> Boost kecepatan s/d 20 Mbps</li>
+            </ul>
+            <a href="https://wa.me/6285179816173?text=Halo%20LMT%20Internet,%20saya%20tertarik%20untuk%20pasang%20Paket%2015%20Mbps%20Lite" target="_blank" class="order-btn">Pemasangan Gratis</a>
+          </div>
+        </div>
+
+        <!-- Paket 20 Mbps -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="pricing-card">
+            <div class="package-name">
+              <h3>Paket 20 Mbps</h3>
+            </div>
+            <div class="speed">
+              20<span>Mbps</span>
+            </div>
+            <div class="price">
+              Rp 200.000<span>/ Bulan (Tarif Flat)</span>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fa fa-check-circle"></i> Cocok untuk s/d 7 HP / Perangkat</li>
+              <li><i class="fa fa-check-circle"></i> Pemasangan & registrasi gratis (cukup bayar bulanan awal)</li>
+              <li><i class="fa fa-check-circle"></i> Paket Unlimited</li>
+              <li><i class="fa fa-check-circle"></i> Boost kecepatan s/d 25 Mbps</li>
+            </ul>
+            <a href="https://wa.me/6285179816173?text=Halo%20LMT%20Internet,%20saya%20tertarik%20untuk%20pasang%20Paket%2020%20Mbps%20Lite" target="_blank" class="order-btn">Pemasangan Gratis</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Banner Promo STB -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="stb-promo-banner">
+            <span class="stb-badge">Tambahan Spesial</span>
+            <h3>Dapatkan <span>STB Android</span> untuk TV Anda</h3>
+            <p>Hanya dengan menambah <strong>Rp 200.000</strong> (sekali bayar/hak milik), nikmati ratusan channel TV Lokal & Sepak Bola langsung di rumah Anda.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- S&K & Area Section -->
+  <div class="info-section">
+    <div class="container">
+      <div class="row">
+        
+        <!-- Syarat & Ketentuan -->
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="info-box">
+            <h4>Syarat & Ketentuan</h4>
+            <ul>
+              <li>Syarat dan ketentuan berlaku dengan kontrak berlangganan minimal selama 1 Tahun.</li>
+              <li>Semua kerusakan kabel dan perangkat akan menjadi tanggung jawab LMT (Free tanpa biaya tambahan).</li>
+              <li>Free instalasi dan registrasi, cukup membayar biaya bulanan paket di awal.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Area Layanan -->
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="info-box">
+            <h4>Wilayah Jangkauan LMT</h4>
+            <p style="color: #afadb5; margin-bottom: 20px;">Layanan internet kami siap dipasang pada area-area berikut:</p>
+            <div class="area-tags">
+              <span class="area-tag">Jatirunggo</span>
+              <span class="area-tag">Seneng</span>
+              <span class="area-tag">Pundung</span>
+              <span class="area-tag">Kebonagung</span>
+              <span class="area-tag">Gambir</span>
+              <span class="area-tag">Jatisari</span>
+              <span class="area-tag">Legarang</span>
+              <span class="area-tag">Kunciputih</span>
+              <span class="area-tag">Kuncen</span>
+              <span class="area-tag">Kebonsari</span>
+              <span class="area-tag">Jatikurung</span>
+              <span class="area-tag">Wangon</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  <!-- CTA Section -->
+  <div class="langganan-cta" style="background-color: #12072b; padding: 40px 0 80px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="line-dec" style="margin: 0 auto 15px auto; width: 100px; height: 2px; background-color: #7453fc;"></div>
+          <h2 style="color: #fff; font-size: 32px; font-weight: 700; margin-bottom: 15px;">Siap Berlangganan Internet Terbaik?</h2>
+          <p style="color: #afadb5; font-size: 16px; max-width: 600px; margin: 0 auto 30px auto; line-height: 1.6;">Daftar sekarang juga untuk menikmati internet cepat, stabil, dan andal di rumah atau bisnis Anda.</p>
+          <div class="main-button">
+            <a href="https://daftar-wifi.vercel.app/" target="_blank" style="padding: 14px 40px; font-weight: 700; font-size: 15px; letter-spacing: 1px;">DAFTAR SEKARANG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="padding: 8px 0px 4px 0px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p style="margin-bottom: 0 !important;">© 2026 LMT — Lintas Multi Tama. Seluruh hak cipta dilindungi.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
